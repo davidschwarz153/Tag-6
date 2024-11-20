@@ -8,34 +8,41 @@ html{
     font-size: 10px;
 }
 
-div{
+.zitat{
     margin: 100px;
     text-align: center;
     width: 400px;
     height:120px;
-    margin-bottom: 50px;
     position: relative;
 }
 
-div p::first-letter{
+.zitat p::first-letter{
     font-size: 24px;
 }
 
-div p::before{
-    background-color: black;
-    background-image: url(../img/pseudo-bild1.png);
-    background-size: 10%;
-    background-position: top left;
-    background-repeat: no-repeat;
-    position: absolute;
+.zitat::before,
+.zitat::after{
+    content: "";
+    width: 50px;
+    height: 50px;
 }
 
-div p::after{
-    background-image: url(../img/pseudo-bild1.png) ;
-    background-size: 10%;
-    background-position: bottom right;
+.zitat::before{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/157/157247.png);
+    top: -2rem;
+    left: -5rem;
     background-repeat: no-repeat;
     position: absolute;
+    background-size: cover;
+}
+
+.zitat::after{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/157/157248.png);
+    bottom: 0rem;
+    right: -2rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
 }
 
 
